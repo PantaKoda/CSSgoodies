@@ -1,0 +1,126 @@
+.lol-wrapper{
+    position: relative;
+     overflow: hidden;
+}
+#rofl-1{
+    animation: 0.08s infinite alternate rofl1;
+}
+
+#rofl-2{
+    animation: 0.08s infinite alternate rofl2
+}
+
+@keyframes rofl2{
+    from{
+        opacity:1;
+    }
+
+    to{
+        opacity:0;
+    }
+}
+
+@keyframes rofl1{
+    from{
+        opacity:0
+    }
+    to{
+        opacity:1;
+    }
+}
+
+
+#lol-1{
+    animation: 0.08s infinite alternate blinklol1;
+}
+@keyframes blinklol1{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+#lol-2{
+    animation: 0.08s infinite alternate blinklol2;
+}
+@keyframes blinklol2{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+#lol-3{
+    animation: 0.08s infinite alternate blinklol3;
+}
+@keyframes blinklol3{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#lol-4{
+    animation: 0.08s infinite alternate blinklol4;
+}
+@keyframes blinklol4{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.initial-lol{
+  position: relative;
+  left: 100%;
+  top: 150px;
+  animation: moveFirst 5s linear .2s;
+  animation-iteration-count: 1;
+  width: 150px;
+}
+.first-lol{
+  position: relative;
+  left: -30%;
+  top: 150px;
+  animation: move 5s linear 5s infinite;
+  width: 150px;
+}
+
+
+.second-lol{
+    position: relative;
+  left: -30%;
+  top: 200px;
+  animation: move 8s linear 0s infinite;
+  width: 150px;
+}
+
+.third-lol{
+    top: 250px;
+  left: -30%;
+  position: relative;
+  animation: move 11s linear 1s infinite;
+  width: 150px;
+}
+@keyframes move {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes moveFirst {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 100%;
+  }
+}
